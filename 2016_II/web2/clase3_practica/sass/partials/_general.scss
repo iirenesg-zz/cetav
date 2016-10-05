@@ -1,0 +1,28 @@
+// Reset
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+// General styles
+
+body {
+	font: 18px $font-main;
+}
+
+h1 {
+	font: bold 48px $font-main;
+	border-bottom: 1px solid $gray;
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+
+h2 {
+	font: bold 21px $font-main;
+}
+
+.section-info span {
+	position: absolute;
+	right: 0;
+}

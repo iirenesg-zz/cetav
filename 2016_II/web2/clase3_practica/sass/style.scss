@@ -1,0 +1,32 @@
+@import "partials/variables";
+@import "partials/general";
+@import "partials/layout";
+
+// Class styles
+
+.pic {
+	position: absolute;
+	right: 0;
+}
+
+.contact-info {
+	margin-bottom: 20px;
+}
+
+.email {
+	color: $gray;
+}
+
+.objective {
+	margin-bottom: 50px;
+	width: 55%;
+}
+
+.emphasis-text {
+	font: italic 18px $font-emphasis;
+	color: $gray;
+}
+
+.middle-section {
+	margin-top: 30px;
+}

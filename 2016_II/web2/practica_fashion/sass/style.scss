@@ -1,0 +1,77 @@
+@import "partials/variables";
+@import "partials/general";
+
+// Container
+
+.wrapper {
+	width: 970px;
+	margin: 0 auto;
+}
+
+// Header
+
+.header {
+	position: relative;
+}
+
+.nav {
+	position: absolute;
+	z-index: 2;
+	top: 75px;
+	right: 0;
+
+	li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 24px;
+	}
+
+	a {
+	font: 18px $font-main;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $white;
+	
+		&:hover {
+			color: $cyan;
+		}
+	}
+}
+
+// Ft Image
+
+.featured-image {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.featured-text {
+	padding: 20px;
+	width: 285px;
+	background-color: $white;
+	position: absolute;
+	z-index: 2;
+	right: 60px;
+	top: 150px;
+
+	p {
+		font-size: 14px;
+	}
+}
+
+// Main Content
+
+.article-content {
+	width: 300px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 20px;
+
+	&:first-child {
+		margin-left: 0;
+	}
+
+	img {
+		margin-bottom: 15px;
+	}
+}

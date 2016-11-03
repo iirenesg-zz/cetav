@@ -1,0 +1,39 @@
+//Services
+.services-module {
+	width: 290px;
+	display: inline-block;
+	margin-left: 60px;
+	text-align: center;
+
+	a {
+		@extend %links;
+		color: $light-brown;
+	}
+}
+
+//Featured
+.ft-content {
+	color: #fff;
+	display: inline-block;
+	vertical-align: top;
+	width: 40%;
+	margin-left: 50px;
+	padding: 50px 0;
+
+	p {
+		color: #fff;
+		margin: 15px 0;
+	}
+}
+
+//Gallery
+.gallery-info {
+	text-align: center;
+	width: 800px;
+	margin: 0 auto 40px;
+
+	img {
+		display: inline-block;
+		margin: 10px 0;
+	}
+}

@@ -1,6 +1,6 @@
 //Modules for sections with a three column layout
 .three-col-module {
-	width: 290px;
+	width: 25%;
 	display: inline-block;
 	margin-left: 60px;
 	text-align: center;
@@ -16,7 +16,7 @@
 	color: #fff;
 	display: inline-block;
 	vertical-align: top;
-	width: 500px;
+	width: 40%;
 	margin-left: 50px;
 	padding: 50px 0;
 
@@ -29,7 +29,7 @@
 .ft-image {
 	background: no-repeat url("../img/ft-image.jpg");
 	background-size: cover;
-	width: 600px;
+	width: 50%;
 	height: 400px;
 	display: inline-block;
 }
@@ -37,7 +37,7 @@
 //Head of section
 .section-info {
 	text-align: center;
-	width: 800px;
+	width: 50%;
 	margin: 0 auto 40px;
 
 	img {

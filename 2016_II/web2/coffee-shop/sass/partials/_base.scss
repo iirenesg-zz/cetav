@@ -4,24 +4,24 @@
 }
 
 body {
-	font: 14px $font-titles;
+	font: 1em $font-titles;
 }
 
 h2 {
-	font: bold 24px $font-main;
+	font: bold 1.5em $font-main;
 	text-transform: uppercase;
 	color: $dark-gray;
 }
 
 h3 {
-	font: bold 18px $font-main;
+	font: bold 1.12em $font-main;
 	text-transform: uppercase;
 	color: #fff;
 }
 
 p {
 	color: $dark-gray;
-	margin-top: 5px;
+	margin-top: 0.45em;
 }
 
 a {
@@ -37,7 +37,7 @@ a:hover {
 	font-weight: bold;
 	font-style: italic;
 	display: inline-block;
-	margin-top: 5px;
+	margin-top: 0.45em;
 }
 
 button {
@@ -45,7 +45,7 @@ button {
 	background-color: $medium-gray;
 	color: $dark-brown;
 	border: none;
-	padding: 15px;
+	padding: 1em;
 	cursor: pointer;
 	border-radius: 5px;
 	-webkit-box-shadow: 0px 7px 7px -5px rgba(0,0,0,0.5);

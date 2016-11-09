@@ -1,8 +1,8 @@
 //Modules for sections with a three column layout
 .three-col-module {
-	width: 25%;
+	width: 18.12em;
 	display: inline-block;
-	margin-left: 60px;
+	margin-left: 3.75em;
 	text-align: center;
 
 	a {
@@ -16,32 +16,32 @@
 	color: #fff;
 	display: inline-block;
 	vertical-align: top;
-	width: 40%;
-	margin-left: 50px;
-	padding: 50px 0;
+	width: 30em;
+	margin-left: 3.12em;
+	padding: 3.12em 0;
 
 	p {
 		color: #fff;
-		margin: 15px 0;
+		margin: 1em 0;
 	}
 }
 
 .ft-image {
 	background: no-repeat url("../img/ft-image.jpg");
 	background-size: cover;
-	width: 50%;
-	height: 400px;
+	width: 37.5em;
+	height: 28em;
 	display: inline-block;
 }
 
 //Head of section
 .section-info {
 	text-align: center;
-	width: 50%;
-	margin: 0 auto 40px;
+	width: 50em;
+	margin: 0 auto 2.5em;
 
 	img {
 		display: inline-block;
-		margin: 10px 0;
+		margin: 0.62em 0;
 	}
 }

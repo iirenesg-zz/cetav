@@ -1,0 +1,45 @@
+header {
+	background-color: $medium-gray;
+	border-top: 10px solid $dark-brown;
+	padding: 2.5em 0;
+}
+
+.logo {
+	background: no-repeat url("../img/logo.png");
+	background-size: contain;
+	display: inline-block;
+	width: 6.25em;
+	height: 3.12em;
+}
+
+.nav {
+	background-color: $light-gray;
+	float: right;
+	padding: 0 1.25em;
+	border-radius: 3.12em;
+
+	li {
+		list-style: none;
+		display: inline-block;
+		padding: 1em 1.25em;
+		border-left: 2px solid $medium-gray;
+	}
+
+	li:first-child {
+		border-left: none;
+	}
+
+	a {
+		color: $dark-gray;
+		text-transform: uppercase;
+		font-size: 0.75em;
+	}
+}
+
+.home {
+	width: 1em;
+	height: 1em;
+	background: no-repeat url("../img/nav-controls/home-icon.png");
+	background-size: contain;
+	display: inline-block;
+}

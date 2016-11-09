@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 1em $font-titles;
+}
+
+h2 {
+	font: bold 1.5em $font-main;
+	text-transform: uppercase;
+	color: $dark-gray;
+}
+
+h3 {
+	font: bold 1.12em $font-main;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+p {
+	color: $dark-gray;
+	margin-top: 0.45em;
+}
+
+a {
+	font: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+%links {
+	font-weight: bold;
+	font-style: italic;
+	display: inline-block;
+	margin-top: 0.45em;
+}
+
+button {
+	@extend %links;
+	background-color: $medium-gray;
+	color: $dark-brown;
+	border: none;
+	padding: 1em;
+	cursor: pointer;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 7px 7px -5px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 7px 7px -5px rgba(0,0,0,0.5);
+	box-shadow: 0px 7px 7px -5px rgba(0,0,0,0.5);
+}

@@ -1,0 +1,33 @@
+footer {
+	background-image: url("../img/footer-bg.jpg");
+	color: #fff;
+	padding: 40px 0 70px;
+
+	.footer-menu:first-child {
+		margin-left: 0;
+	}
+}
+
+.footer-menu {
+	width: 20%;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 65px;
+
+	h3 {
+		margin-bottom: 10px;
+	}
+
+	span {
+		display: block;
+	}
+
+	a {
+		margin-right: 10px;
+	}
+}
+
+.nav-page {
+	text-align: center;
+	margin: 35px 0;
+}

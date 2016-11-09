@@ -1,0 +1,15 @@
+//Variables
+@import "partials/helpers/variables";
+
+//General
+@import "partials/base";
+@import "partials/helpers/clear";
+
+//Layout
+@import "partials/layout/containers";
+@import "partials/layout/header";
+@import "partials/layout/footer";
+
+//Components
+@import "partials/components/slider";
+@import "partials/components/modules";

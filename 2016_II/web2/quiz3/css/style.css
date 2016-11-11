@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.nav {
+	display: table;
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.nav > li {
+	display: table-cell;
+}
+
+.nav li a {
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	text-decoration: none;
+	color: #000;
+	text-align: center;
+}
+
+.nav > li > a {
+	border: 1px solid lightgray;
+}
+
+.nav > li:hover ul{
+	display: table;
+	width: 100%;
+}
+
+.hidden {
+	display: none;
+}
+
+.hidden li {
+	display: table-cell;
+}
+
+.hidden li span {
+	display: block;
+}

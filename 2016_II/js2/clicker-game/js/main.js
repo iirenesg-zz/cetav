@@ -623,6 +623,7 @@ function closeRulette() {
 	$('#display-rulette-name').addClass('hidden');
 	$('#button-rulette-close').addClass('hidden');
 	$('#button-rulette-play').removeClass('hidden');
+	$('#display-rulette').removeClass('rulette-result');
 }
 
 //------------------
@@ -643,9 +644,11 @@ function isPlural(n) {
 //------------------
 
 $(document).ready(function() {
-	//if (localStorage.getItem('game')) {
-	//	game = localStorage.getItem('game');
-	//} 
+	if (localStorage.getItem('game')) {
+		game.data = JSON.parse(localStorage.getItem('game'));
+		$('#display-pps').text(game.data.pps);
+		$('#display-cats').text(game.data.amtcats);
+	} 
 	game.start()
 });
 
@@ -654,5 +657,9 @@ $(document).ready(function() {
 //------------------
 
 $('#button-save').click(function() {
-	localStorage.setItem('game', game);
+	localStorage.setItem('game', JSON.stringify(game.data));
+}) 
+
+$('#button-delete').click(function() {
+	localStorage.clear();
 }) 

@@ -200,7 +200,8 @@ h3 {
 	width: 350px;
 	min-height: 150px;
 	top: 12px;
-	background-color: lightgray;
+	background-color: white;
+	border: 5px solid #432918;
 }
 
 .phone-box:before {
@@ -208,12 +209,12 @@ h3 {
     display: block;
     width: 0; 
     height: 0; 
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid lightgray; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #432918; 
     position: absolute;
     left: 50px;
-    top: -12px;
+    top: -15px;
 }
 
 .display-messages {
@@ -399,9 +400,9 @@ small {
 ----------*/
 
 .event-popup {
-	width: 200px;
-	height: 200px;
-	background-color: blue;
+	width: 54px;
+	height: 33px;
+	background: no-repeat url('../img/scene/cat-event.png');
 	position: absolute;
 	z-index: 15;
 }

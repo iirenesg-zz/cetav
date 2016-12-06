@@ -265,8 +265,8 @@ game.checkAchievements = function() {
 
 game.unlockAchievement = function(achievement, type) {
 	var box = $('<div></div>');
-	var template = $('<p>From: Cat Store</p><p>Subject: Achievement unlocked!</p>');
-	var message = $('<p>Achieved: '+achievement.description+'</p><p>'+achievement.text+'</p>');
+	var template = $('<p><strong>From:</strong> Cat Store</p><p><strong>Subject:</strong> Achievement unlocked!</p>');
+	var message = $('<p><strong>Achieved:</strong> '+achievement.description+'</p><p>'+achievement.text+'</p>');
 	box.append(template);
 	box.append(message);
 	game.displayMessage(box, achievement);

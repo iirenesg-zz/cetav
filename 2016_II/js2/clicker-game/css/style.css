@@ -1,0 +1,443 @@
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Base */
+html, body {
+	background-color: #936037;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font: 18px 'Varela Round', sans-serif;
+	background: no-repeat url('../img/scene/bg.jpg');
+	background-size: cover;
+}
+
+/* Helper */
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar:horizontal {
+	display: none;
+}
+::-webkit-scrollbar {
+	background-color: #432918;
+	width: 10px;
+}
+::-webkit-scrollbar-button {
+	background-color: transparent;
+	height: 10px;
+}
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background-color: orange;
+	border-radius: 5px;
+}
+
+/* Disable selecting text */
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+     -khtml-user-select: none; /* Konqueror */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+/*---------
+   Nav 
+----------*/
+
+.nav {
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	padding: 10px 50px;
+	box-sizing: border-box;
+}
+
+.game-nav {
+	bottom: 0;
+	height: 100px;
+	background-color: #936037;
+	border-top: 5px solid #432918;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.left-nav, .right-nav {
+	display: inline-block;
+	position: relative;
+}
+
+.left-nav {
+	float: left;
+}
+
+.right-nav {
+	float: right;
+}
+
+.game-button {
+	padding: 10px 20px;
+	margin: 0 20px;
+	border: 5px solid #432918;
+	border-radius: 10px;
+	background-color: #fff;
+	vertical-align: top;
+	cursor: pointer;
+	font: inherit;
+}
+
+.game-button:focus {
+  outline: none;
+}
+
+/* Tabs */
+.tab-active {
+	background-color: #432918;
+	color: #fff;
+}
+
+.game-tab {
+	width: 300px;
+	height: 500px;
+	border: 5px solid #432918;
+	position: absolute;
+	bottom: 75px;
+	overflow: auto;
+}
+
+.game-tab h2 {
+	text-align: center;
+	padding: 5px 0;
+	background-color: #432918;
+	color: #fff;
+	margin-bottom: 15px;
+}
+
+h3 {
+	color: #432918;
+	text-align: center;
+}
+
+.tab-content {
+	padding: 0 10px 10px;
+}
+
+.tab {
+	z-index: 3;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.tab-right {
+	right: 30px;
+}
+
+.tab-left {
+	left: 40px;
+}
+
+.clicker {
+	height: 490px;
+	width: 630px;
+	background: no-repeat url('../img/scene/maincat_normal.png');
+	position: absolute;
+	bottom: 0;
+	left: 30%;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.clicker:hover {
+	background: no-repeat url('../img/scene/maincat_hover.png');
+}
+
+.clicker:active {
+	background: no-repeat url('../img/scene/maincat_active.png');
+}
+
+.game-stats {
+	text-align: center;
+	color: #fff;
+	display: inline-block;
+	position: absolute;
+	bottom: 40px;
+	left: 37.5%;
+}
+
+.game-stats p {
+	font-size: 21px;
+}
+
+.lp-counter {
+	margin-bottom: 15px;
+}
+
+.lp-counter span {
+	font-size: 36px;
+	display: block;
+}
+
+.phone-box {
+	padding: 10px;
+	position: relative;
+	width: 350px;
+	min-height: 150px;
+	top: 12px;
+	background-color: lightgray;
+}
+
+.phone-box:before {
+    content: "";
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid lightgray; 
+    position: absolute;
+    left: 50px;
+    top: -12px;
+}
+
+.display-messages {
+	width: 350px;
+	height: 150px;
+	overflow: auto;
+}
+
+.phone-notification {
+	background-color: #432918;
+	padding: 5px;
+	position: relative;
+	right: 35px;
+	top: 10px;
+	border-radius: 5px;
+	color: #fff;
+}
+
+/*---------
+   Store 
+----------*/
+
+/* Items */
+.item {
+	border: 1px solid gray;
+	margin-top: 10px;
+	background-color: lightgray;
+	position: relative;
+}
+
+.item-info {
+	float: left;
+	padding: 10px;
+}
+
+.item-icon {
+	width: 65px;
+	height: 65px;
+	background-color: #000;
+	display: inline-block;
+	float: left;
+	background-size: cover;
+}
+
+.item-amt {
+	position: absolute;
+	right: 10px;
+	font-size: 24px;
+}
+
+.item-available {
+	background-color: transparent;
+	cursor: pointer;
+}
+
+/* Item icons */
+
+#autopet-icon {
+	background: no-repeat url('../img/icons/item-autopet.png');
+}
+
+#food-icon {
+	background: no-repeat url('../img/icons/item-food.png');
+}
+
+#clothes-icon {
+	background: no-repeat url('../img/icons/item-clothes.png');
+}
+
+#playground-icon {
+	background: no-repeat url('../img/icons/item-playground.png');
+}
+
+#chase-icon {
+	background: no-repeat url('../img/icons/item-chase.png');
+}
+
+#destroy-icon {
+	background: no-repeat url('../img/icons/item-destroy.png');
+}
+
+/* Upgrades */
+.mini-icon {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	margin: 0 8px 8px;
+}
+
+.upgrade {
+	background: no-repeat url('../img/icons/upgrade-unavail.png');
+}
+
+.achievement {
+	background: no-repeat url('../img/icons/achievement.png');
+}
+
+.upgrade-available {
+	background: no-repeat url('../img/icons/upgrade.png');
+	cursor: pointer;
+}
+
+/*---------
+   Album 
+----------*/
+
+.cat-module {
+	display: inline-block;
+	background-color: gray;
+	text-align: center;
+	margin: 0 10px 15px;
+	border-radius: 7px;
+}
+
+.cat-picture {
+	width: 125px;
+	height: 125px;
+	background: no-repeat url('../img/scene/album-nocat.jpg');
+	display: inline-block;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+}
+
+.cat-picture-avail {
+	background: no-repeat url('../img/scene/album-cat.jpg');
+}
+
+/*---------
+   Rulette 
+----------*/
+
+.rulette-box {
+	width: 200px;
+	height: 170px;
+	background: no-repeat url('../img/scene/who-cat.jpg');
+	margin-left: 50px;
+	margin-bottom: 20px;
+}
+
+.rulette-result {
+	background: no-repeat url('../img/scene/this-cat.jpg');
+	border: 3px solid gray;
+}
+
+#tab-rulette {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+
+.hoverBox {
+	width: 190px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: black;
+	color: white;
+	position: absolute;
+	z-index: 10;
+}
+
+.hoverBox:before {
+    content: "";
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid black; 
+    position: absolute;
+    top: 16px;
+    right: -12px;
+}
+
+small {
+	font-size: 13px;
+}
+
+/*---------
+   Event 
+----------*/
+
+.event-popup {
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	position: absolute;
+	z-index: 15;
+}
+
+/*---------
+  Scene
+----------*/
+
+.scene-img {
+	position: absolute;
+}
+
+#scene-autopet {
+	right: 0;
+	top: 50%;
+}
+
+#scene-food {
+	top: 45%;
+}
+
+#scene-clothes {
+	right: 0;
+	top: 15%;
+}
+
+#scene-playground {
+	top: 25%;
+	left: 70%;
+}
+
+#scene-chase {
+	top: 53%;
+}
+
+#scene-destroy {
+	top: 25%;
+	left: 25%;
+}

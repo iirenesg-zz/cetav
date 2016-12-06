@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Kitty Clicker</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	</head>
+	<body>
+		<div id="game">
+			
+			<div id="event-popup" class="event-popup hidden"></div>
+			<div class="nav">
+				<div class="left-nav">
+					<button id="button-phone" class="game-button">Phone</button>
+					<small class="phone-notification hidden" id="phone-notification">New</small>
+					<div class="tab phone-box hidden" id="tab-phone">
+						<p id="no-messages">No new messages</p>
+						<div class="display-messages" id="display-messages"></div>
+						<button class="game-button hidden" id="delete-messages">Delete Messages</button>
+					</div>
+				</div>
+				<div class="right-nav">
+					<button id="stop-music" class="game-button">Music on</button>
+					<button id="button-save" class="game-button">Save</button>
+				</div>
+			</div>
+			<div id="cat-scene">
+				<img class="scene-img hidden" src="img/scene/scenecats/autopet.png" alt="" id="scene-autopet">
+				<img class="scene-img hidden" src="img/scene/scenecats/food.png" alt="" id="scene-food">
+				<img class="scene-img hidden" src="img/scene/scenecats/clothes.png" alt="" id="scene-clothes">
+				<img class="scene-img hidden" src="img/scene/scenecats/playground.png" alt="" id="scene-playground">
+				<img class="scene-img hidden" src="img/scene/scenecats/chase.png" alt="" id="scene-chase">
+				<img class="scene-img hidden" src="img/scene/scenecats/destroy.png" alt="" id="scene-destroy">
+			</div>
+			<div class="clicker no-select" id="clicker">
+				<div class="game-stats">
+					<p class="lp-counter"><span id="display-points">0</span> love points</p>
+					<p><span id="display-pps">0</span> per second</p>
+					<p><span id="display-cats">0</span> cats</p>
+				</div>
+			</div>
+			<div class="tab game-tab tab-left hidden" id="tab-rulette">
+				<h2>Rulette</h2>
+				<div id="display-rulette" class="rulette-box"></div>
+				<button class="game-button" id="button-rulette-play">Play</button>
+				<p id="display-rulette-name"></p>
+				<button class="game-button hidden" id="button-rulette-close">Yay</button>
+			</div>
+			<div class="tab game-tab tab-left hidden" id="tab-album">
+				<h2>Photo Album</h2>
+			</div>
+			<div class="tab game-tab tab-right hidden" id="tab-store">
+				<h2>Store</h2>
+				<div class="tab-content" id="display-upgrades">
+					<h3>Upgrades</h3>
+				</div>
+				<div class="tab-content">
+					<h3>Items</h3>
+					<div class="item clearfix" id="autopet">
+						<span class="item-icon" id="autopet-icon"></span>
+						<div class="item-info">
+							<span class="item-title">Autopet</span>
+							<span class="item-amt" id="display-amt-autopet">0</span>
+							<p><span class="item-cost" id="display-cost-autopet">15</span> love points</p>
+						</div>
+					</div>
+					<div class="item clearfix" id="food">
+						<span class="item-icon" id="food-icon"></span>
+						<div class="item-info">
+							<span class="item-title">Food</span>
+							<span class="item-amt" id="display-amt-food">0</span>
+							<p><span class="item-cost" id="display-cost-food">100</span> love points</p>
+						</div>
+					</div>
+					<div class="item clearfix" id="clothes">
+						<span class="item-icon" id="clothes-icon"></span>
+						<div class="item-info">
+							<span class="item-title">Clothes</span>
+							<span class="item-amt" id="display-amt-clothes">0</span>
+							<p><span class="item-cost" id="display-cost-clothes">1100</span> love points</p>
+						</div>
+					</div>
+					<div class="item clearfix" id="playground">
+						<span class="item-icon" id="playground-icon"></span>
+						<div class="item-info">
+							<span class="item-title">Play</span>
+							<span class="item-amt" id="display-amt-playground">0</span>
+							<p><span class="item-cost" id="display-cost-playground">12000</span> love points</p>
+						</div>
+					</div>
+					<div class="item clearfix" id="chase">
+						<span class="item-icon" id="chase-icon"></span>
+						<div class="item-info">
+							<span class="item-title">Chase</span>
+							<span class="item-amt" id="display-amt-chase">0</span>
+							<p><span class="item-cost" id="display-cost-chase">130000</span> love points</p>
+						</div>
+					</div>
+					<div class="item clearfix" id="destroy">
+						<span class="item-icon" id="destroy-icon"></span>
+						<div class="item-info">
+							<span class="item-title">Destroy</span>
+							<span class="item-amt" id="display-amt-destroy">0</span>
+							<p><span class="item-cost" id="display-cost-destroy">1.4 million</span> lp</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab game-tab tab-right hidden" id="tab-stats">
+				<h2>Stats</h2>
+				<div class="tab-content">
+					<p>Total points: <span id="display-stats-total">0</span></p>
+					<p>Total time in the game: <span id="display-stats-time">0</span></p>
+				</div>
+				<div class="tab-content" id="tab-stats-upgrades">
+					<h3>Upgrades</h3>
+				</div>
+				<div class="tab-content" id="tab-stats-achievements">
+					<h3>Achievements</h3>
+				</div>
+			</div>
+			<div class="nav game-nav">
+				<div class="left-nav">
+					<button id="button-rulette" class="game-button">Rulette</button>
+					<button id="button-album" class="game-button">Album</button>
+				</div>
+				<div class="right-nav">
+					<button id="button-stats" class="game-button">Stats</button>
+					<button id="button-store" class="game-button">Store</button>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="vendor/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

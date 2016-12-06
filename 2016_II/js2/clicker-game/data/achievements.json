@@ -1,0 +1,112 @@
+{
+	"totalPoints": [
+		{
+			"amt": "100",
+			"text": "Thank you for taking care of your cat!", 
+			"description": "Won 100 love points", 
+			"icon": "",
+			"isUnlocked": "0",
+			"reward": "20"
+		},
+		{
+			"amt": "1000",
+			"text": "Thank you for taking care of your cat!", 
+			"description": "Won a thousand love points", 
+			"icon": "",
+			"isUnlocked": "0",
+			"reward": "250"
+		},
+		{
+			"amt": "10000",
+			"text": "That's a lot of love for a cat!",
+			"description": "Won ten thousand love points",  
+			"icon": "",
+			"isUnlocked": "0",
+			"reward": "2500"
+		},
+		{
+			"amt": "100000",
+			"text": "That's a lot of love for a cat!", 
+			"description": "Won a hundred thousand love points", 
+			"icon": "",
+			"isUnlocked": "0",
+			"reward": "15000"
+		},
+		{
+			"amt": "1000000",
+			"text": "Cats don't need that much love!", 
+			"description": "Won one million love points", 
+			"icon": "",
+			"isUnlocked": "0",
+			"reward": "100000"
+		}
+	],
+	"amtcats": [
+		{
+			"amt": "5",
+			"text": "There's never enough cats!", 
+			"description": "Get 5 cats", 
+			"icon": "",
+			"isUnlocked": "0",
+			"reward": "250"
+		},
+		{
+			"amt": "10",
+			"text": "Wow you really are a cat lover!", 
+			"description": "Get 10 cats", 
+			"icon": "",
+			"isUnlocked": "0",
+			"reward": "1500"
+		},
+		{
+			"amt": "15",
+			"text": "I think you might have too many cats", 
+			"description": "Get 15 cats", 
+			"icon": "",
+			"isUnlocked": "0",
+			"reward": "12500"
+		},
+		{
+			"amt": "20",
+			"text": "You have a problem", 
+			"description": "Get 20 cats", 
+			"icon": "",
+			"isUnlocked": "0",
+			"reward": "100000"
+		}
+	],
+	"rulettePlays": [
+		{
+			"amt": "3",
+			"text": "Thank you for supporting our store!", 
+			"description": "Play rulette 3 times", 
+			"icon": "",
+			"isUnlocked": "0",
+			"reward": "150"
+		},
+		{
+			"amt": "10",
+			"text": "It gets more fun each time you play", 
+			"description": "Play rulette 10 times", 
+			"icon": "",
+			"isUnlocked": "0",
+			"reward": "500"
+		},
+		{
+			"amt": "25",
+			"text": "Come by any time!", 
+			"description": "Play rulette 25 times", 
+			"icon": "",
+			"isUnlocked": "0",
+			"reward": "1500"
+		},
+		{
+			"amt": "50",
+			"text": "You are not a lucky one are you", 
+			"description": "Play rulette 50 times", 
+			"icon": "",
+			"isUnlocked": "0",
+			"reward": "5000"
+		}
+	]
+}

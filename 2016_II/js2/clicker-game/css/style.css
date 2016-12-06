@@ -233,6 +233,12 @@ h3 {
 	color: #fff;
 }
 
+.new-message {
+	padding-bottom: 5px;
+	border-bottom: 1px solid;
+	margin-bottom: 15px;
+}
+
 /*---------
    Store 
 ----------*/

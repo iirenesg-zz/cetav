@@ -74,7 +74,6 @@ game.buyItem = function(box) {
 
 				item = game.items[i];
 				game.removePoints(item.currentPrice);
-				console.log('Imin');
 
 				if (item.amt == 0) {
 					var id = item.name;
@@ -264,7 +263,7 @@ game.checkAchievements = function() {
 };
 
 game.unlockAchievement = function(achievement, type) {
-	var box = $('<div></div>');
+	var box = $('<div class="new-message"></div>');
 	var template = $('<p><strong>From:</strong> Cat Store</p><p><strong>Subject:</strong> Achievement unlocked!</p>');
 	var message = $('<p><strong>Achieved:</strong> '+achievement.description+'</p><p>'+achievement.text+'</p>');
 	box.append(template);
@@ -378,7 +377,7 @@ game.start = function() {
 	    game.checkAchievements();                
 	}); 
 
-	eventLoop();
+	//eventLoop();
 };
 
 
@@ -460,13 +459,13 @@ setInterval(function() {
 	game.addPoints(pps);
 }, 1000)
 
-function eventLoop() {
-    var random = getRandomInt(300000, 180000);
-    setTimeout(function() {
-            game.fireEvent();
-            eventLoop();  
-    }, random);
-}
+//function eventLoop() {
+//    var random = getRandomInt(300000, 180000);
+//    setTimeout(function() {
+//            game.fireEvent();
+//            eventLoop();  
+//    }, random);
+//}
 
 //--------------------------
 // User interaction events

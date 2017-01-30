@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url(../img/wov.png);
+}
+
+.wrapper {
+	width: 700px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.row {
+	overflow: hidden;
+}
+
+.square {
+	width: 75px;
+	height: 75px;
+	border: 1px solid;
+	display: inline-block;
+	float: left;
+	box-sizing: border-box;
+	background-color: #fff;
+	background-size: 500px;
+}
+
+.even .square:nth-child(even) {
+	background-color: #000;
+}
+
+.odd .square:nth-child(odd) {
+	background-color: #000;
+}
+
+/* Chess pieces */
+
+.piece-white {
+	background-image: url(../img/chess-white.png);
+}
+
+.piece-black {
+	background-image: url(../img/chess-black.png);
+}
+
+.pawn {
+	background-position: 80px -8px;
+}
+
+.rook {
+	background-position: 163px -8px;
+}
+
+.knight {
+	background-position: 246px -7px;
+}
+
+.bishop {
+	background-position: 330px -6px;
+}
+
+.queen {
+	background-position: 413px -6px;
+}
+
+.king {
+	background-position: 495px -6px;
+}
